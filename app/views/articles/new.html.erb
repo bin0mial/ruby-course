@@ -2,7 +2,7 @@
 
 <%= form_with scope: :article, url: articles_path, local: true do |form| %>
   <p>
-    <%= form.label :title %><br>
+    <%= form.label :title, 'TITLE' %><br>
     <%= form.text_field :title %>
   </p>
 
