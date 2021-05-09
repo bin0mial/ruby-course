@@ -40,6 +40,7 @@
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="archive-zip (v0.12.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.16, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.7.5, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, ruby-2.7.3-p183) [gem]" level="application" />
@@ -53,6 +54,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.8, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.0, ruby-2.7.3-p183) [gem]" level="application" />
@@ -71,6 +73,7 @@
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.4.2, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.7, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.11.3, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.18.4, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.6, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.6, ruby-2.7.3-p183) [gem]" level="application" />
@@ -85,6 +88,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.11.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.1, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.1.1, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="responders (v3.0.1, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_dep (v1.5.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, ruby-2.7.3-p183) [gem]" level="application" />
@@ -102,6 +106,7 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.9, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v4.2.0, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v3.7.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.3, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-2.7.3-p183) [gem]" level="application" />
@@ -115,11 +120,16 @@
     <option name="generators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="application_record" />
         <option value="assets" />
         <option value="channel" />
         <option value="coffee:assets" />
         <option value="controller" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
@@ -129,7 +139,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="system_test" />
@@ -141,11 +154,16 @@
     <option name="myGenerators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="application_record" />
         <option value="assets" />
         <option value="channel" />
         <option value="coffee:assets" />
         <option value="controller" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
@@ -155,7 +173,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="system_test" />
