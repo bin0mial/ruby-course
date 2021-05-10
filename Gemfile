@@ -19,6 +19,12 @@ gem 'uglifier', '>= 1.3.0'
 # Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
 
+gem 'cancancan'
+
+gem "active_model_serializers", "~> 0.8.0"
+
+gem 'jwt'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
